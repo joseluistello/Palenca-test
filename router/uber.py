@@ -3,7 +3,7 @@ from fastapi import APIRouter, status, Response
 
 
 router = APIRouter(
-    prefix='/companies',
+    prefix='/uber',
     tags=['uber']
 )
 
@@ -41,7 +41,7 @@ def create_employee(mail: str, password: str, response: Response):
 
 
 
-@router.get('/user', status_code=status.HTTP_200_OK)
+@router.get('/profile/{access_token}', status_code=status.HTTP_200_OK)
 def get_employee_information(token: str, response: Response):
     access_token = 'cTV0aWFuQ2NqaURGRE82UmZXNVBpdTRxakx3V1F5'
     success_information = {
