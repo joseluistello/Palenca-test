@@ -32,7 +32,7 @@ def create_employee(mail: str, password: str, response: Response):
     Simulates incorrect username or password
     """
     if ((mail not in email) and (password not in passwordd)):
-        response.status_code = status.HTTP_404_NOT_FOUND
+        response.status_code = status.HTTP_401_UNAUTHORIZED
         return {'error': f'CREDENTIALS_INVALID', 'details': f'Incorrect username or password'}
     else:
         response.status_code = status.HTTP_200_OK
@@ -53,7 +53,7 @@ def get_employee_information(token: str, response: Response):
     Simulates incorrect token
     """
     if token not in access_token:
-        response.status_code = status.HTTP_404_NOT_FOUND
+        response.status_code = status.HTTP_401_UNAUTHORIZED
         return {'error': f'CREDENTIALS_INVALID', 'details': f'Incorrect token'}
     else:
         response.status_code = status.HTTP_200_OK
