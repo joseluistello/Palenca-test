@@ -9,7 +9,7 @@ router = APIRouter(
 
 
 @router.post('/login/{mail}/{password}', status_code=status.HTTP_200_OK)
-def create_employee(mail: str, password: str, response: Response):
+def create_account(mail: str, password: str, response: Response):
     email = 'pierre@palenca.com'
     passwordd = 'MyPwdChingon123'
     profile_information = {
@@ -42,7 +42,7 @@ def create_employee(mail: str, password: str, response: Response):
 
 
 @router.get('/profile/{access_token}', status_code=status.HTTP_200_OK)
-def get_employee_information(token: str, response: Response):
+def get_token(token: str, response: Response):
     access_token = 'cTV0aWFuQ2NqaURGRE82UmZXNVBpdTRxakx3V1F5'
     success_information = {
    "message": "SUCCESS",
