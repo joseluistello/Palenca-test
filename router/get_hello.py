@@ -4,7 +4,7 @@ from fastapi import APIRouter, status, Response
 
 
 router = APIRouter(
-    prefix='/hello'
+    prefix=''
 )
 
 
