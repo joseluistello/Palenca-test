@@ -7,7 +7,7 @@
 
 1. Clone the repo
    ```py
-   git clone https://github.com/joseluistello/Django_Google_API
+   git clone https://github.com/joseluistello/Palenca-test
    ```
 
 2. Install VirtualEnv
