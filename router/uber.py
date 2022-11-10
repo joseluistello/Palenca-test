@@ -8,7 +8,7 @@ router = APIRouter(
 )
 
 
-@router.post('/login', status_code=status.HTTP_200_OK)
+@router.post('/login/{mail}/{password}', status_code=status.HTTP_200_OK)
 def create_employee(mail: str, password: str, response: Response):
     email = 'pierre@palenca.com'
     passwordd = 'MyPwdChingon123'
