@@ -1,15 +1,11 @@
-from typing import Optional
-from fastapi import APIRouter, status, Response
-
+from fastapi import APIRouter
 
 
 router = APIRouter(
-    prefix=''
+    prefix='/hello'
 )
 
 
 @router.get('/')
 def create_hello():
     return "Hello Palenca"
-
-

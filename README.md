@@ -6,23 +6,30 @@
 ### Para poder correr el codigo deben hacer lo siguiente ⏬
 
 1. Clone the repo
-   ```py
-   git clone https://github.com/joseluistello/Palenca-test
+   ````shell
+   git clone https://github.com/joseluistello/Django_Google_API
    ```
 
 2. Install VirtualEnv
-    ```py
+    ```shell
     pip install virtualenv
     ```
 3. Create a Virtual Enviroment
-    ```py
+    ```shell
     virtualenv palencatest
     ```
 
 4. Run Virtual Enviroment
-    ```py
+    ```shell
     ./palencatest/Scripts/Activate.ps1
     ```
+
+````shell`
+# in mac
+source palencatest/bin/activate
+
+```
+
 
 5. Install requeriments.text
     ```py
