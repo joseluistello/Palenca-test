@@ -8,7 +8,7 @@ router = APIRouter(
 )
 
 
-@router.post('/')
+@router.get('/')
 def create_hello():
     return "Hello Palenca"
 
